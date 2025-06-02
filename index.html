@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmonic Odyssey - Musical Competition Winner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Halos -->
+  <div class="halo halo-1"></div>
+  <div class="halo halo-2"></div>
+  <div class="halo halo-3"></div>
+
+  <div class="app-container">
+    <!-- Header/Hero Section -->
+    <div class="hero">
+      <h1>Harmonic Odyssey</h1>
+      <div class="subtitle">A Journey Through Sound & Emotion</div>
+    </div>
+
+    <!-- Main Music Player -->
+    <div class="music-player">
+      <div class="player-content">
+        <!-- Lyrics & Visualization Area -->
+        <div class="visualization-container">
+          <div class="lyrics-display" id="lyrics-display">
+            <div class="lyrics-line active" data-line="0">
+              <span class="word" data-word="0">
+                <span class="syllable" data-syllable="0">Be</span>
+                <span class="syllable" data-syllable="1">neath</span>
+              </span>
+              <span class="word" data-word="1">
+                <span class="syllable" data-syllable="2">the</span>
+              </span>
+              <span class="word" data-word="2">
+                <span class="syllable" data-syllable="3">stars</span>
+              </span>
+              <span class="word" data-word="3">
+                <span class="syllable" data-syllable="4">that</span>
+              </span>
+              <span class="word" data-word="4">
+                <span class="syllable" data-syllable="5">shine</span>
+              </span>
+              <span class="word" data-word="5">
+                <span class="syllable" data-syllable="6">so</span>
+              </span>
+              <span class="word" data-word="6">
+                <span class="syllable" data-syllable="7">bright,</span>
+              </span>
+            </div>
+            <div class="lyrics-line upcoming" data-line="1">
+              <span class="word" data-word="7">
+                <span class="syllable" data-syllable="8">We</span>
+              </span>
+              <span class="word" data-word="8">
+                <span class="syllable" data-syllable="9">jour</span>
+                <span class="syllable" data-syllable="10">ney</span>
+              </span>
+              <span class="word" data-word="9">
+                <span class="syllable" data-syllable="11">through</span>
+              </span>
+              <span class="word" data-word="10">
+                <span class="syllable" data-syllable="12">the</span>
+              </span>
+              <span class="word" data-word="11">
+                <span class="syllable" data-syllable="13">end</span>
+                <span class="syllable" data-syllable="14">less</span>
+              </span>
+              <span class="word" data-word="12">
+                <span class="syllable" data-syllable="15">night.</span>
+              </span>
+            </div>
+            <div class="lyrics-line inactive" data-line="2">
+              <span class="word" data-word="13">
+                <span class="syllable" data-syllable="16">Ev</span>
+                <span class="syllable" data-syllable="17">'ry</span>
+              </span>
+              <span class="word" data-word="14">
+                <span class="syllable" data-syllable="18">sound</span>
+              </span>
+              <span class="word" data-word="15">
+                <span class="syllable" data-syllable="19">and</span>
+              </span>
+              <span class="word" data-word="16">
+                <span class="syllable" data-syllable="20">ev</span>
+                <span class="syllable" data-syllable="21">'ry</span>
+              </span>
+              <span class="word" data-word="17">
+                <span class="syllable" data-syllable="22">breath,</span>
+              </span>
+            </div>
+            <div class="lyrics-line inactive" data-line="3">
+              <span class="word" data-word="18">
+                <span class="syllable" data-syllable="23">Tells</span>
+              </span>
+              <span class="word" data-word="19">
+                <span class="syllable" data-syllable="24">a</span>
+              </span>
+              <span class="word" data-word="20">
+                <span class="syllable" data-syllable="25">sto</span>
+                <span class="syllable" data-syllable="26">ry</span>
+              </span>
+              <span class="word" data-word="21">
+                <span class="syllable" data-syllable="27">of</span>
+              </span>
+              <span class="word" data-word="22">
+                <span class="syllable" data-syllable="28">life</span>
+              </span>
+              <span class="word" data-word="23">
+                <span class="syllable" data-syllable="29">and</span>
+              </span>
+              <span class="word" data-word="24">
+                <span class="syllable" data-syllable="30">death.</span>
+              </span>
+            </div>
+          </div>
+          
+          <!-- Visualizers -->
+          <div class="visualizers">
+            <div class="visualizer">
+              <h4>Harmonic Spectrum</h4>
+              <div class="piano-container">
+                <div class="piano-keys" id="piano-visualizer">
+                  <!-- Piano keys will be dynamically created -->
+                </div>
+              </div>
+            </div>
+            
+            <div class="visualizer">
+              <h4>Sonic Waveform</h4>
+              <div class="waveform-container" id="waveform-visualizer">
+                <!-- Waveform bars will be dynamically created -->
+              </div>
+            </div>
+          </div>
+          
+          <!-- Chord Display -->
+          <div class="chord-display" id="chord-display">
+            <div class="chord" data-chord="0">
+              <div class="chord-name">Em7</div>
+              <div class="chord-type">min7</div>
+            </div>
+            <div class="chord" data-chord="1">
+              <div class="chord-name">Cmaj9</div>
+              <div class="chord-type">maj9</div>
+            </div>
+            <div class="chord" data-chord="2">
+              <div class="chord-name">G/B</div>
+              <div class="chord-type">maj/3</div>
+            </div>
+            <div class="chord" data-chord="3">
+              <div class="chord-name">Asus4</div>
+              <div class="chord-type">sus4</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Progress Bar -->
+        <div class="progress-container" id="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+          <div class="progress-handle" id="progress-handle"></div>
+        </div>
+        <div class="progress-time">
+          <span id="current-time">0:00</span>
+          <span id="total-time">2:05</span>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls-container">
+          <div class="transport-controls">
+            <button class="transport-btn" id="restart-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 2v20"></path>
+                <path d="M19 2v20"></path>
+                <path d="M12 14l7-5-7-5v10z"></path>
+              </svg>
+            </button>
+            <button class="transport-btn primary" id="play-btn">
+              <div class="play-btn-container">
+                <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="6" y1="4" x2="6" y2="20"></line>
+                  <line x1="18" y1="4" x2="18" y2="20"></line>
+                </svg>
+              </div>
+            </button>
+            <button class="transport-btn" id="stop-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="6" width="12" height="12"></rect>
+              </svg>
+            </button>
+          </div>
+          
+          <div class="status-display" id="status-display">
+            <span class="status-dot"></span>
+            <span class="status-text">Ready to perform</span>
+          </div>
+        </div>
+        
+        <!-- Settings Panel -->
+        <div class="settings-panel">
+          <div class="settings-header">
+            <div class="settings-title">Performance Settings</div>
+            <div class="settings-toggles">
+              <button class="settings-toggle active" data-panel="settings">Settings</button>
+              <button class="settings-toggle" data-panel="effects">Effects</button>
+            </div>
+          </div>
+          
+          <div class="settings-content open" id="settings-panel">
+            <div class="settings-group">
+              <div class="settings-label">
+                <span>Voice Type</span>
+              </div>
+              <div class="select-container">
+                <select class="settings-select" id="voice-select">
+                  <option value="default">Auto-Select Best</option>
+                  <option value="soprano">Soprano</option>
+                  <option value="alto">Alto</option>
+                  <option value="tenor">Tenor</option>
+                  <option value="bass">Bass</option>
+                </select>
+                <span class="select-arrow">▼</span>
+              </div>
+            </div>
+            
+            <div class="settings-group">
+              <div class="settings-label">
+                <span>Tempo</span>
+                <span class="settings-value"><span id="tempo-value">72</span> BPM</span>
+              </div>
+              <div class="slider-container">
+                <input type="range" class="settings-slider" id="tempo-slider" 
+                       min="60" max="120" value="72" step="1">
+              </div>
+            </div>
+            
+            <div class="settings-group">
+              <div class="settings-label">
+                <span>Voice Volume</span>
+                <span class="settings-value"><span id="voice-volume-value">80</span>%</span>
+              </div>
+              <div class="slider-container">
+                <input type="range" class="settings-slider" id="voice-volume-slider" 
+                       min="0" max="100" value="80" step="1">
+              </div>
+            </div>
+            
+            <div class="settings-group">
+              <div class="settings-label">
+                <span>Accompaniment</span>
+                <span class="settings-value"><span id="instrument-volume-value">65</span>%</span>
+              </div>
+              <div class="slider-container">
+                <input type="range" class="settings-slider" id="instrument-volume-slider" 
+                       min="0" max="100" value="65" step="1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="app-footer">
+      <div class="creator-info">
+        Premium Competition Entry by <span class="creator-name">Copilot</span> for VisualMusicalMinds
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
